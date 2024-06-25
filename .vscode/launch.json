@@ -10,6 +10,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
+      "console": "integratedTerminal",
       "runtimeArgs": ["run-script", "start:dev"]
     }
   ]
