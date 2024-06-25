@@ -5,13 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "dev",
+      "name": "dev:server",
       "type": "node",
+      "args": ["--watch"],
       "request": "launch",
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}/apps/server",
       "runtimeExecutable": "npm",
-      "console": "integratedTerminal",
-      "runtimeArgs": ["run-script", "start:dev"]
+      "runtimeArgs": ["run-script", "dev"]
     }
   ]
 }

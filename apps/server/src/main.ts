@@ -14,6 +14,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
   await app.listen(port).then(() => {
     console.log(`server started @ http://127.0.0.1:${port}`);
+    console.log(`swagger @ http://127.0.0.1:${port}/api`);
   });
 }
 bootstrap();
