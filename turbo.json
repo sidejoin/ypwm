@@ -5,11 +5,12 @@
       "dependsOn": ["^build"],
       "outputs": [".dist/**", "!.next/cache/**"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+    "test": {
+      "persistent": true,
+      "cache": false
     },
     "dev": {
-      "persistent": false,
+      "persistent": true,
       "cache": false
     }
   }
